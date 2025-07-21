@@ -1,16 +1,59 @@
-# weather_app_by_location
+# 🌦️ Weather App by Location
 
-A new Flutter project.
+A clean and responsive Flutter application that displays real-time weather information based on the user’s current GPS location. Built using **Flutter**, **Dio** for networking, **BLoC** for state management, and OpenWeatherMap API.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 📍 Detects device’s current location using `geolocator`
+- ☁️ Fetches live weather data from OpenWeatherMap
+- 🌡 Displays temperature, weather condition, and city name
+- 🔄 Pull-to-refresh and automatic refresh on location update
+- 💫 Loading spinner using `loading_animation_widget`
+- 📱 Responsive and lightweight UI
+- 🧠 Structured with BLoC architecture for clean separation of concerns
+- ❗ Full error handling and visual feedback for loading/failure states
+- 
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🚀 Getting Started
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Yomna-Abdelmegeed/weather-App-by-location.git
+cd weather-App-by-location
+```
+
+### 2. Install Dependencies
+
+```bash
+flutter pub get
+```
+
+### 3. Configure API Key
+
+### 4. Run the App
+
+```bash
+flutter run
+```
+
+---
+
+## 📦 Dependencies Used
+
+| Package                   | Purpose                              |
+|---------------------------|--------------------------------------|
+| `dio`                     | HTTP client for API calls            |
+| `geolocator`              | Fetching device location             |
+| `flutter_bloc`            | BLoC pattern for state management    |
+| `loading_animation_widget`| Animated loading indicators          |
+
+---
+
+## 👩‍💻 Author
+
+**Yomna Abdelmegeed**  
+[GitHub Profile](https://github.com/Yomna-Abdelmegeed)
