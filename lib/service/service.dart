@@ -9,10 +9,12 @@ class Service {
 
   Future<WeatherModel> getWeather(
       {required double lat, required double lon}) async {
-    Response response =
-        await dio.get('$baseUrl/weather?lat=$lat&lon=$lon&appid=$apiKey');
-    WeatherModel weatherModel = WeatherModel.fromJson(response.data);
-
-    return weatherModel;
+    try {
+      Response response =
+          await dio.get('$baseUrl/weather?lat=$lat&lon=$lon&appid=$apiKey');
+      return WeatherModel.fromJson(response.data);
+    } catch (e) {
+      throw Exception('Failed to fetch weather data: $e');
+    }
   }
 }

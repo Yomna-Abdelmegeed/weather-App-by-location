@@ -8,4 +8,7 @@ final class WeatherLoading extends WeatherState {}
 
 final class WeatherLoaded extends WeatherState {}
 
-final class WeatherFailure extends WeatherState {}
+final class WeatherFailure extends WeatherState {
+  final String message;
+  WeatherFailure(this.message);
+}
