@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class DoubleInfoWidgets extends StatelessWidget {
   const DoubleInfoWidgets({super.key, required this.title, required this.num});
   final String title;
-  final double num;
+  final dynamic num;
   @override
   Widget build(BuildContext context) {
     return Column(
